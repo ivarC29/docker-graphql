@@ -46,6 +46,3 @@ jobs:
       run: |
         docker push ivar29/docker-graphql:$NEW_VERSION
         docker push ivar29/docker-graphql:latest
-
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
